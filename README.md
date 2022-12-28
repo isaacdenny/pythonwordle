@@ -5,11 +5,12 @@ wordle spin-off in python
 Users can compete in a daily wordle-like online game and track their leaderboard status. Users can log in and then play the game. After playing, each user will have analytics based on their performance that they and other players can see. 
 
 # Technologies
-- FastAPI
-- PostgreSQL
-- SQLalchemy
+- Python 3.11+
+- Fast API
+- Postgres
+- SQLAlchemy
 - Alembic
-- 
+- Uvicorn
 
 # Local Development
 1. Clone this repo and `cd` into the repo directory
@@ -24,8 +25,8 @@ Users can compete in a daily wordle-like online game and track their leaderboard
 # Design API
 
 # Planning TODOs
-- [] List all requirements
-- [] Create Schema
-- [] Design API
-- [] Create Mockups
-- [] Choose Technologies
+- [ ] List all requirements
+- [ ] Create Schema
+- [ ] Design API
+- [ ] Create Mockups
+- [ ] Choose Technologies
