@@ -28,13 +28,16 @@ Users can compete in a daily wordle-like online game and track their leaderboard
 - email
 - created_at
 - updated_at
+- total_solved
+- total_failed
 
-## Challenge (Bomb)
+## Challenge (Paint Bomb)
 
 - title
 - answer
 - provided_hints
 - created_by
+- solved_by
 - created_at
 - updated_at
 - published_status
@@ -42,17 +45,17 @@ Users can compete in a daily wordle-like online game and track their leaderboard
 # Design API
 // TODO: social-auth
 
-### challenges/
-- GET: list of user bombs
-- POST: create a new bomb
+#### challenges/
+- GET: list of user paint bombs
+- POST: create a new paint bomb
 - DELETE: user bombs?
 
-### challenges/:id/
+#### challenges/:id/
 - GET
 - PATCH
 - DELETE
 
-### users/:id/
+#### users/:id/
 - GET
 - DELETE
 
