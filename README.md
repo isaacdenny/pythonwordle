@@ -2,7 +2,7 @@
 wordle spin-off in python
 
 # Project Summary
-Users can compete in a daily wordle-like online game and track their leaderboard status. Each user will have analytics based on their performance that they and other players can see. The game is called "Pass" where players must log in during the day to pass the bomb to another player. Before passing the bomb, the player must put together a word with the letters written on the bomb. If the player fails to log in during that day (if they have a bomb), or fails to put together a word with the letters provided, the bomb explodes.
+Users can compete in a daily wordle-like online game and track their leaderboard status. Each user will have analytics based on their performance that they and other players can see. The game is called "Pass" where players must log in during the day to pass a paint bomb to another player. Before passing the paint bomb, the player must guess the answer (word) using the hints provided. If the player fails to log in during that day (if they have a bomb), or fails to put together a word with the letters provided, the bomb explodes and the paint-covered user loses points.
 
 # Technologies
 - Python 3.11+
@@ -32,14 +32,29 @@ Users can compete in a daily wordle-like online game and track their leaderboard
 ## Challenge (Bomb)
 
 - title
-- answers
-- provided_letters
+- answer
+- provided_hints
 - created_by
 - created_at
 - updated_at
 - published_status
 
 # Design API
+// TODO: social-auth
+
+### challenges/
+- GET: list of user bombs
+- POST: create a new bomb
+- DELETE: user bombs?
+
+### challenges/:id/
+- GET
+- PATCH
+- DELETE
+
+### users/:id/
+- GET
+- DELETE
 
 # Planning TODOs
 - [ ] List all requirements
